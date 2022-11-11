@@ -1,0 +1,518 @@
+/* 
+MOBILE FIRST DESIGN -- media queries can be found at the end of the styles 
+*/
+
+/* 
+GENERAL SETTINGS 
+*/
+
+body {
+    background-color: whitesmoke;
+    color: rgb(43, 43, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: auto 0.8em auto 0.8em;
+}
+
+footer {
+    background-color: rgb(56, 51, 54);
+    height: 5em;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* 
+TOP NAV BAR
+*/
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(107, 107, 107);
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 1em 0.5em;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.logo-area span {
+    font-size: 1em;
+}
+
+.logo-area img {
+    height: 3em;
+}
+
+/* .dropdown-top-button {
+    width: 30vw;
+    padding: 1em 0 1em 0em;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.dropdown-top-button:hover {
+    background-color: #c730582f;
+    transition: 0.3s;
+
+}
+
+.dropdown-top:hover .dropdown-top-content {
+    display: block;
+}
+
+.dropdown-top-content {
+    width: 30vw;
+    display: none;
+    position: absolute;
+    background-color: #F0F0F0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-top-content>a {
+    background-color: white;
+    border-radius: 4px;
+    margin: 0.5em;
+    padding: 0.5em 1.1em;
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-top-content>a:nth-child(1):hover {
+    background-color: rgb(255, 240, 174);
+    transition: 0.3s;
+
+}
+
+.dropdown-top-content>a:nth-child(2):hover {
+    background-color: rgb(174, 236, 255);
+    transition: 0.3s;
+
+}
+
+.dropdown-top-content>a:nth-child(3):hover {
+    background-color: rgb(217, 194, 255);
+    transition: 0.3s;
+} */
+
+/* 
+HERO AREA
+*/
+
+
+.section {
+    margin-top: 5vh;
+}
+
+.intro {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25253851540616246) 0%, rgba(0, 0, 0, 0) 73%, rgba(255, 255, 255, 0.283) 100%), url(./img/istockphoto-1167600197-170667a.jpg);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1 {
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 5px;
+    padding: 3vw 5vh;
+}
+
+.extra-info {
+    display: none;
+}
+
+/* 
+PROJECTS AND SKILLS
+*/
+
+
+.projects {
+    display: block;
+}
+
+.project-img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.skill {
+    border: 1px solid rgb(128, 128, 128);
+    margin: 1em 0 1em 0;
+    border-radius: 8px;
+    height: 1em;
+}
+
+.skill-progress {
+    height: 1em;
+    border-radius: 8px;
+    background-color: #a5dfe9;
+}
+
+#skill-html {
+    animation-name: htmlProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes htmlProgressBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+
+#skill-css {
+    animation-name: cssProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cssProgressBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+#skill-javascript {
+    animation-name: jsProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jsProgressBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+#skill-python {
+    animation-name: pythonProgressBar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pythonProgressBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+/* 
+CONTACT FORM
+*/
+
+form>p {
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+form input:not([type="radio"]) {
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 0.5em;
+    margin: 1em auto 1em auto;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-container>span {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container>span>label {
+    display: block;
+}
+
+form input[type="radio"] {
+    width: 3em;
+    height: 3em;
+}
+
+form>div {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 1em auto;
+}
+
+form input[type="submit"] {
+    background-color: #f1bc29;
+    margin: 3em auto 5em auto;
+    font-size: 1.2em;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #8faceb;
+    transition: 0.3s;
+}
+
+form>#message {
+    width: 100%;
+    max-width: 100%;
+    min-height: 5em;
+    max-height: 15em;
+    margin: 1em auto 1em auto;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+form>label[for="message"] {
+    display: block;
+    margin-top: 2em;
+    font-weight: 600;
+}
+
+/* 
+FOOTER
+*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+.social-media {
+    width: 3em;
+    fill: rgb(231, 231, 231);
+}
+
+.flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+/* 
+BIGGER SCREENS SETTINGS
+*/
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+    .extra-info {
+        display: block;
+    }
+
+    .intro {
+        height: 30vh;
+    }
+
+    .intro h1 {
+        padding: 1rem 2rem;
+        font-size: 3.5rem;
+    }
+
+    .projects {
+        padding-top: 3em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .project-img {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .projects p {
+        text-align: center;
+    }
+
+    .skill {
+        width: 30em;
+        margin: 1em 0 1em 0;
+        border-radius: 8px;
+        height: 1em;
+    }
+
+    .skill-progress {
+        background-color: rgb(108, 213, 240);
+    }
+
+    form input:not([type="radio"]) {
+        width: 30em;
+        margin-left: 0;
+        display: inline;
+    }
+
+    form>#message {
+        margin-left: 0;
+        resize: none;
+        height: 10em;
+    }
+
+    form input[type="submit"] {
+        width: 10em;
+        margin-left: 0;
+    }
+
+    .logo-area img {
+        height: 5em;
+    }
+
+}
+
+/* barra de navegacion */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
+.menu ul {
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.menu ul a {
+    margin-left: 192px;
+    width: 20%;
+    height: inherit;
+    color: #222;
+    display: inline-block;
+}
+
+.menu ul a:hover {
+    background-color: rgb(140, 0, 254);
+    color: #fff;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu ul {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.3s;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+    }
+
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        background-color: #d6b3eb;
+        padding: 10px 0px 10px 5%;
+    }
+
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+    }
+
+    #menuToggle:checked~ul {
+        max-height: 350px;
+    }
+
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
